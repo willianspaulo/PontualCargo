@@ -2,14 +2,14 @@ $white: #ffffff;
 $black: #000000;
 $primary1: #361040;
 $primary2: #ff5b7d;
-$primary3:#02ccc0;
+$primary3: #C6142D;
 $textCol: #1f1f1f;
 
 // improt fonts -  font-family: 'Nunito', sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 
 @mixin main-font {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
@@ -18,7 +18,7 @@ $textCol: #1f1f1f;
   background-color: $col1;
   color: $col2;
   border-radius: $bRadius;
-  transition: all .3s;
+  transition: all 0.3s;
   border: 1px solid $col1;
   text-transform: uppercase;
 
@@ -32,8 +32,6 @@ $textCol: #1f1f1f;
   text-transform: uppercase;
   font-weight: bold;
 }
-
-
 
 body {
   @include main-font;
@@ -108,8 +106,7 @@ a:focus {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: $primary1;
-
+  // background: $primary1;
 }
 
 .sub_page {
@@ -117,14 +114,12 @@ a:focus {
     min-height: auto;
     background: $primary1;
   }
-
 }
 
 .header_section {
+  z-index: 10;
   padding: 10px 0;
 }
-
-
 
 .navbar-brand {
   color: $white;
@@ -151,7 +146,7 @@ a:focus {
         text-transform: uppercase;
         border-radius: 5px;
         font-size: 15px;
-        transition: all .3s;
+        transition: all 0.3s;
 
         i {
           margin-right: 5px;
@@ -177,8 +172,6 @@ a:focus {
   }
 }
 
-
-
 .custom_nav-container .nav_search-btn {
   width: 35px;
   height: 35px;
@@ -191,8 +184,6 @@ a:focus {
   }
 }
 
-
-
 .custom_nav-container .navbar-toggler {
   outline: none;
 }
@@ -201,7 +192,7 @@ a:focus {
   padding: 0;
   width: 37px;
   height: 42px;
-  transition: all .3s;
+  transition: all 0.3s;
 
   span {
     display: block;
@@ -212,7 +203,7 @@ a:focus {
     transition: all 0.3s;
     position: relative;
     border-radius: 5px;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &::before,
     &::after {
@@ -224,7 +215,7 @@ a:focus {
       background-color: $white;
       top: -10px;
       border-radius: 5px;
-      transition: all .3s;
+      transition: all 0.3s;
     }
 
     &::after {
@@ -263,7 +254,6 @@ a:focus {
   }
 
   &[aria-expanded="false"] {
-
     .s-1,
     .s-2,
     .s-3 {
@@ -272,7 +262,6 @@ a:focus {
   }
 }
 
-
 /*end header section*/
 
 /* slider section */
@@ -280,7 +269,8 @@ a:focus {
   flex: 1;
   display: flex;
   align-items: center;
-  padding: 15px 0 120px 0;
+  padding: 0 0 120px 0;
+  margin-top: -144px;
 
   .row {
     align-items: center;
@@ -289,6 +279,10 @@ a:focus {
   #customCarousel1 {
     width: 100%;
     position: unset;
+
+    .carousel-item div {
+      height: 100vh;
+    }
   }
 
   .detail-box {
@@ -300,7 +294,6 @@ a:focus {
       margin-bottom: 15px;
     }
 
-
     .btn-box {
       display: flex;
       margin-top: 20px;
@@ -309,9 +302,7 @@ a:focus {
       a {
         @include hero_btn($primary2, $white, 10px, 55px, 10px);
       }
-
     }
-
   }
 
   .img-box {
@@ -333,13 +324,13 @@ a:focus {
       opacity: 1;
       color: $white;
       font-size: 16px;
-      transition: all .2s;
-      border-radius: 100%;
+      transition: all 0.2s;
+      border-radius: 5px;
       background: $primary3;
       margin-right: 5px;
 
-      &:hover {}
-
+      &:hover {
+      }
     }
 
     .carousel-control-prev {
@@ -350,7 +341,6 @@ a:focus {
       right: 25px;
     }
   }
-
 }
 
 // end slider section
@@ -371,14 +361,11 @@ a:focus {
     p {
       margin-top: 15px;
     }
-
-
   }
 
   a {
     @include hero_btn($primary1, $white, 10px, 45px, 5px);
     margin-top: 15px;
-
   }
 }
 
@@ -503,10 +490,9 @@ a:focus {
 
 // blog section
 .blog_section {
-
   .box {
     margin-top: 55px;
-    box-shadow: 0 0 5px 0 rgba($color: #000000, $alpha: .15);
+    box-shadow: 0 0 5px 0 rgba($color: #000000, $alpha: 0.15);
 
     .img-box {
       position: relative;
@@ -517,7 +503,7 @@ a:focus {
         right: 15px;
         padding: 10px 15px;
         font-size: 16px;
-        background-color: rgba($color: $primary1, $alpha: .85);
+        background-color: rgba($color: $primary1, $alpha: 0.85);
         margin: 0;
         display: flex;
         justify-content: center;
@@ -545,7 +531,6 @@ a:focus {
       a {
         color: $primary1;
       }
-
     }
   }
 }
@@ -554,7 +539,6 @@ a:focus {
 
 // client section
 .client_section {
-
   .box {
     display: flex;
     flex-direction: column;
@@ -569,7 +553,7 @@ a:focus {
       img {
         width: 100%;
         border-radius: 100%;
-        filter: drop-shadow(5px 5px 0 rgba($color:$primary1, $alpha: 0.7));
+        filter: drop-shadow(5px 5px 0 rgba($color: $primary1, $alpha: 0.7));
       }
     }
 
@@ -621,11 +605,9 @@ a:focus {
       color: $white;
     }
   }
-
 }
 
 // end client section
-
 
 /* info section */
 .info_section {
@@ -672,13 +654,13 @@ a:focus {
     }
   }
 
-  .row>div {
+  .row > div {
     margin-top: 25px;
   }
 
   a {
     text-transform: none;
-  } 
+  }
 
   h6 {
     font-weight: bold;
@@ -687,7 +669,8 @@ a:focus {
     margin-bottom: 25px;
   }
 
-  p {}
+  p {
+  }
 
   .info_link-box {
     a {
@@ -705,7 +688,6 @@ a:focus {
         margin-right: 5px;
         font-size: 18px;
       }
-
     }
   }
 }
@@ -728,5 +710,22 @@ a:focus {
   }
 }
 
-
 /* end footer section*/
+
+.elementor-background-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(140deg, #00008e 58%, #017280 75%);
+  opacity: 0.68;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.elementor-background-overlay,
+.elementor-background-slideshow {
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.carousel-item {
+}

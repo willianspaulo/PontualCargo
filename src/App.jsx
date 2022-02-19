@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import SliderImg from './assets/images/slider-img.png'
+import Slider1Img from './assets/images/photo1.jpg'
+import Slider2Img from './assets/images/photo2.jpg'
+import Slider3Img from './assets/images/photo3.jpg'
 import AboutImg from './assets/images/about-img.jpg'
 import F1Img from './assets/images/f1.png'
 import F2Img from './assets/images/f2.png'
@@ -9,6 +11,7 @@ import B1Img from './assets/images/b1.jpg'
 import B2Img from './assets/images/b2.jpg'
 import B3Img from './assets/images/b3.jpg'
 import ClientImg from './assets/images/client.jpg'
+import LogoBranca from './assets/images/logo-branca.svg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,11 +19,25 @@ function App() {
   return (
     <div className="App">
       <div className="hero_area">
-        {/* <!-- header section strats --> */}
         <header className="header_section">
           <div className="container">
-            <nav className="navbar navbar-expand-lg custom_nav-container ">
-              <a className="navbar-brand " href="index.html"> Olests </a>
+            <div className='row'>
+              <div className='col-md-9 offset-md-3 text-right text-white'>
+                <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                  <div style={{padding: '5px 30px 0 0', fontSize: '14px'}}>
+                    <span className='fa fa-phone'></span> &nbsp;&nbsp;(61) 2192-1200
+                  </div>
+                  <div style={{padding: '5px 100px 0 0', fontSize: '14px'}}>
+                    <span className='fa fa-map-marker'></span> &nbsp;&nbsp;Aeroporto BSB - Hangar Pontual
+                  </div>
+                  <button type="button" className="btn btn-outline-light btn-sm">Seja Cliente</button> &nbsp;
+                  <button type="button" className="btn btn-outline-light btn-sm">Login</button>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <nav className="navbar navbar-expand-lg custom_nav-container" style={{height: '60px'}}>
+              <a className="navbar-brand " href="index.html"> <img src={LogoBranca} alt="Logo Branca" height="66px" /> </a>
 
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className=""> </span>
@@ -29,18 +46,18 @@ function App() {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav">
                   <li className="nav-item active">
-                    <a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
+                    <a className="nav-link" href="index.html">Home</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="about.html"> About</a>
+                    <a className="nav-link" href="about.html">A Pontual</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="shop.html">Shop</a>
+                    <a className="nav-link" href="shop.html">Produtos e Serviços</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="blog.html">Blog</a>
+                    <a className="nav-link" href="blog.html">Logistica</a>
                   </li>
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <a className="nav-link" href="">
                       <i className="fa fa-shopping-basket" aria-hidden="true"></i>
                     </a>
@@ -49,109 +66,64 @@ function App() {
                     <button className="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                       <i className="fa fa-search" aria-hidden="true"></i>
                     </button>
-                  </form>
+                  </form> */}
                 </ul>
               </div>
             </nav>
           </div>
         </header>
-        {/* <!-- end header section --> */}
-        {/* <!-- slider section --> */}
         <section className="slider_section ">
           <div id="customCarousel1" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">
+              {/* <div className="carousel-item active">
+                <div className="container ">
+                  <div className="row">
+                    <div className="col-md-6 col-lg-5">
+                      <div className="detail-box">
+                        <h1>
+                          Fresh Fruits
+                        </h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis fugit, sed tempora praesentium commodi error, hic recusandae repudiandae neque ad molestias, atque veritatis labore quae eveniet autem in
+                        </p>
+                        <div className="btn-box">
+                          <a href="" className="btn1">
+                            Buy Now
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6 col-lg-7">
+                      <div className="img-box">
+                        <img src={Slider3Img} alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> */}
               <div className="carousel-item active">
-                <div className="container ">
-                  <div className="row">
-                    <div className="col-md-6 col-lg-5">
-                      <div className="detail-box">
-                        <h1>
-                          Fresh Fruits
-                        </h1>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis fugit, sed tempora praesentium commodi error, hic recusandae repudiandae neque ad molestias, atque veritatis labore quae eveniet autem in
-                        </p>
-                        <div className="btn-box">
-                          <a href="" className="btn1">
-                            Buy Now
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6 col-lg-7">
-                      <div className="img-box">
-                        <img src={SliderImg} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <div style={{ background: ` green url(${Slider1Img}) no-repeat`, backgroundSize: 'cover' }}></div>
               </div>
               <div className="carousel-item">
-                <div className="container ">
-                  <div className="row">
-                    <div className="col-md-6 col-lg-5">
-                      <div className="detail-box">
-                        <h1>
-                          Fresh Fruits
-                        </h1>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis fugit, sed tempora praesentium commodi error, hic recusandae repudiandae neque ad molestias, atque veritatis labore quae eveniet autem in
-                        </p>
-                        <div className="btn-box">
-                          <a href="" className="btn1">
-                            Buy Now
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6 col-lg-7">
-                      <div className="img-box">
-                        <img src={SliderImg} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <div style={{ background: ` green url(${Slider2Img}) no-repeat`, backgroundSize: 'cover' }}></div>
               </div>
               <div className="carousel-item">
-                <div className="container ">
-                  <div className="row">
-                    <div className="col-md-6 col-lg-5">
-                      <div className="detail-box">
-                        <h1>
-                          Fresh Fruits
-                        </h1>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis fugit, sed tempora praesentium commodi error, hic recusandae repudiandae neque ad molestias, atque veritatis labore quae eveniet autem in
-                        </p>
-                        <div className="btn-box">
-                          <a href="" className="btn1">
-                            Buy Now
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6 col-lg-7">
-                      <div className="img-box">
-                        <img src={SliderImg} alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <div style={{ background: ` green url(${Slider3Img}) no-repeat`, backgroundSize: 'cover' }}></div>
               </div>
             </div>
             <div className="carousel_btn-box container">
               <a className="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
-                <i className="fa fa-long-arrow-left" aria-hidden="true"></i>
+                <i className="fa fa-chevron-left" aria-hidden="true"></i>
                 <span className="sr-only">Previous</span>
               </a>
               <a className="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
-                <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
                 <span className="sr-only">Next</span>
               </a>
             </div>
           </div>
         </section>
-        {/* <!-- end slider section --> */}
+        <div className='elementor-background-overlay'></div>
       </div>
 
       {/* <!-- about section --> */}
