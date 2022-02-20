@@ -1,8 +1,11 @@
 import { useState } from 'react'
+import Tracking from './components/tracking'
+
 import Slider1Img from './assets/images/photo1.jpg'
 import Slider2Img from './assets/images/photo2.jpg'
 import Slider3Img from './assets/images/photo3.jpg'
 import AboutImg from './assets/images/about-img.jpg'
+import DoorToDoorImg from './assets/images/door-to-door.jpg'
 import F1Img from './assets/images/f1.png'
 import F2Img from './assets/images/f2.png'
 import F3Img from './assets/images/f3.png'
@@ -24,10 +27,10 @@ function App() {
             <div className='row'>
               <div className='col-md-9 offset-md-3 text-right text-white'>
                 <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                  <div style={{padding: '5px 30px 0 0', fontSize: '14px'}}>
+                  <div style={{ padding: '5px 30px 0 0', fontSize: '14px' }}>
                     <span className='fa fa-phone'></span> &nbsp;&nbsp;(61) 2192-1200
                   </div>
-                  <div style={{padding: '5px 100px 0 0', fontSize: '14px'}}>
+                  <div style={{ padding: '5px 100px 0 0', fontSize: '14px' }}>
                     <span className='fa fa-map-marker'></span> &nbsp;&nbsp;Aeroporto BSB - Hangar Pontual
                   </div>
                   <button type="button" className="btn btn-outline-light btn-sm">Seja Cliente</button> &nbsp;
@@ -36,7 +39,7 @@ function App() {
               </div>
             </div>
             <hr />
-            <nav className="navbar navbar-expand-lg custom_nav-container" style={{height: '60px'}}>
+            <nav className="navbar navbar-expand-lg custom_nav-container" style={{ height: '60px' }}>
               <a className="navbar-brand " href="index.html"> <img src={LogoBranca} alt="Logo Branca" height="66px" /> </a>
 
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -126,40 +129,37 @@ function App() {
         <div className='elementor-background-overlay'></div>
       </div>
 
-      {/* <!-- about section --> */}
-
       <section className="about_section layout_padding">
         <div className="container">
           <div className="detail-box">
             <div className="heading_container heading_center">
-              <h2>
-                About Us
+              <h2 className='text-uppercase'>
+                Serviço Porta a Porta
               </h2>
             </div>
             <p>
-              Normal distribution of letters, as opposed to using 'Content here, content here', making it look like
-              readable English. Many desktop publishing packages and web page editors has a more-or-less normal
-              distribution of letters, as opposed to using 'Content here, content here', making it look like readable
-              English. Many desktop publishing packages and web page editors
+              O sistema Porta a Porta abrange toda a linha de serviços Pontual. Seja carga ou encomenda, 
+              coletamos na sua porta e entregamos na porta do destinatário. Garantia, presteza, agilidade, qualidade e
+              confiabilidade são predicados que só uma empresa com tradição no mercado como a Pontual pode proporcionar.
             </p>
           </div>
           <div className="col-md-9 mx-auto px-0">
             <div className="img-box">
-              <img src={AboutImg} alt="" />
+              <img src={DoorToDoorImg} alt="" />
             </div>
             <div className="btn-box">
               <a href="">
-                Read More
+                Ler Mais
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* <!-- end about section --> */}
-
-      {/* <!-- fruits section --> */}
-
+      <Tracking />
+      <p><b /></p>
+      <p><b /></p>
+      <p><b /></p>
       <section className="fruits_section layout_padding">
         <div className="container">
           <div className="heading_container heading_center ">

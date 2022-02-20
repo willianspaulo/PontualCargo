@@ -1,9 +1,4 @@
-$white: #ffffff;
-$black: #000000;
-$primary1: #361040;
-$primary2: #ff5b7d;
-$primary3: #C6142D;
-$textCol: #1f1f1f;
+@import 'variables.scss';
 
 // improt fonts -  font-family: 'Nunito', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
