@@ -1,0 +1,43 @@
+@import "variables.scss";
+
+.doubt {
+  padding: 100px 0;
+  background-color: $light;
+  // color: $white;
+
+  h2 {
+    font-weight: bold;
+    // margin-bottom: 40px;
+  }
+
+  .form-tracking {
+    margin-top: 40px;
+    display: flex;
+
+    .input-tracking {
+      padding: 20px;
+      border: 3px solid $white;
+      border-right: none;
+      flex-grow: 1;
+      background-color: $white;
+      color: $azulPontual;
+      outline: none;
+    }
+
+    .button-send {
+      padding: 20px;
+      border: 3px solid $white;
+      background-color: transparent;
+      color: $white;
+      outline: none;
+
+      &:hover {
+        background-color: $azulPontual;
+      }
+
+      &:active {
+        background-color: $azulCaneta;
+      }
+    }
+  }
+}
