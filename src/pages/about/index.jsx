@@ -1,3 +1,9 @@
-export default function About(){
-  return <h1>Sobre a Pontual</h1>
+import Footer from "../../components/footer";
+import Header from "../../components/header";
+
+export default function About() {
+  return <>
+    <Header />
+    <Footer />
+  </>
 }
