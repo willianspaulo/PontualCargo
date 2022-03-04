@@ -130,7 +130,7 @@ function App() {
               </h2>
             </div>
             <p>
-              O sistema Porta a Porta abrange toda a linha de serviços Pontual. Seja carga ou encomenda, 
+              O sistema Porta a Porta abrange toda a linha de serviços Pontual. Seja carga ou encomenda,
               coletamos na sua porta e entregamos na porta do destinatário. Garantia, presteza, agilidade, qualidade e
               confiabilidade são predicados que só uma empresa com tradição no mercado como a Pontual pode proporcionar.
             </p>
@@ -149,75 +149,37 @@ function App() {
       </section>
 
       <Tracking />
-      
+
       <Doubt />
-      
+
       <section className="info_section ">
         <div className="info_container ">
           <div className="container">
             <div className="row">
-              <div className="col-md-6 col-lg-3">
+              <div className="col-md-6 col-lg-6">
                 <h6>
-                  ABOUT US
+                  A Pontual
                 </h6>
-                <p>
-                  Nostrum praesentium, animi pariatur eaque harum amet necessitatibus unde aliquam molestias, sapiente cumque aspernatur officia molestiae possimus atque
-                </p>
+                <p>Empresa especializada no transporte de cargas e encomendas expressas, por via aérea, terreste e marítima, nacional e internacional.</p>
+                <p>Fundada em 1982, é membro da IATA (International Air Transport Association) sob registro nº 57-1-0054, organismo regulador e fiscalizador do transporte aéreo internacional.</p>
               </div>
-              <div className="col-md-6 col-lg-3">
+              <div className="col-md-6 col-lg-4 offset-lg-2">
                 <h6>
-                  CONTACT US
+                  Matriz
                 </h6>
                 <div className="info_link-box">
-                  <a href="">
+                  <a href="https://goo.gl/maps/BLKxq2C3HfnWHrqZ8" target="_blank">
                     <i className="fa fa-map-marker" aria-hidden="true"></i>
-                    <span> Location </span>
+                    <span> Aeroporto Internacional de Brasília - TECA Hangar Pontual - Brasília/DF - CEP: 71608-900 </span>
                   </a>
-                  <a href="">
+                  <a href="tel:+556121921200">
                     <i className="fa fa-phone" aria-hidden="true"></i>
-                    <span>+01 12345678901</span>
+                    <span>+55 (61) 2192-1200</span>
                   </a>
-                  <a href="">
+                  <a href="mailto:sac@pontualcargo.com.br">
                     <i className="fa fa-envelope" aria-hidden="true"></i>
-                    <span> demo@gmail.com</span>
+                    <span>sac@pontualcargo.com.br</span>
                   </a>
-                </div>
-              </div>
-              <div className="col-md-6 col-lg-3">
-                <h6>
-                  Our Products
-                </h6>
-                <p>
-                  Sapiente quidem fugit sed incidunt aut quia eos consectetur, iste eius nobis ullam voluptatem esse mollitia amet. Quibusdam eos inventore neque explicabo aliquid quos
-                </p>
-              </div>
-              <div className="col-md-6 col-lg-3">
-                <div className="info_form ">
-                  <h6>
-                    Newsletter
-                  </h6>
-                  <form action="#">
-                    <input type="email" placeholder="Enter your email" />
-                    <button>
-                      Subscribe
-                    </button>
-                  </form>
-                </div>
-                <div className="social_container">
-                  <div className="social_box">
-                    <a href="">
-                      <i className="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a href="">
-                      <i className="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a href="">
-                      <i className="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                    <a href="">
-                      <i className="fa fa-youtube" aria-hidden="true"></i>
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
