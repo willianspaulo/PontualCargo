@@ -7,7 +7,7 @@ import './assets/styles/css/font-awesome.min.css'
 import './assets/styles/css/responsive.css'
 import './assets/styles/css/style.min.css'
 
-import './assets/scripts/jquery-3.4.1.min'
+import './assets/scripts/jquery'
 import './assets/scripts/bootstrap'
 
 ReactDOM.render(

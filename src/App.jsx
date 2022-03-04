@@ -5,16 +5,7 @@ import Doubt from './components/doubt'
 import Slider1Img from './assets/images/photo1.jpg'
 import Slider2Img from './assets/images/photo2.jpg'
 import Slider3Img from './assets/images/photo3.jpg'
-import AboutImg from './assets/images/about-img.jpg'
 import DoorToDoorImg from './assets/images/door-to-door.jpg'
-import F1Img from './assets/images/f1.png'
-import F2Img from './assets/images/f2.png'
-import F3Img from './assets/images/f3.png'
-import F4Img from './assets/images/f4.png'
-import B1Img from './assets/images/b1.jpg'
-import B2Img from './assets/images/b2.jpg'
-import B3Img from './assets/images/b3.jpg'
-import ClientImg from './assets/images/client.jpg'
 import LogoBranca from './assets/images/logo-branca.svg'
 
 function App() {
@@ -238,10 +229,7 @@ function App() {
       {/* <!-- footer section --> */}
       <footer className=" footer_section">
         <div className="container">
-          <p>
-            &copy; <span id="displayYear"></span> All Rights Reserved By
-            <a href="https://html.design/">Free Html Templates</a>
-          </p>
+          <p>{new Date().getFullYear()} &copy; Pontual Cargo</p>
         </div>
       </footer>
       {/* <!-- footer section --> */}
