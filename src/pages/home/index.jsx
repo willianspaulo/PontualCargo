@@ -12,7 +12,7 @@ import Header from '../../components/header'
 export default function Home() {
   return <div className="App">
     <div className="hero_area">
-      <Header />
+      <Header transparent />
       <section className="slider_section ">
         <div id="customCarousel1" className="carousel slide" data-ride="carousel">
           <div className="carousel-inner">

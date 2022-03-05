@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import LogoBranca from './../../assets/images/logo-branca.svg'
 
-export default function Header() {
+export default function Header(props) {
+  console.log(props)
+
+  const background_color = props.transparent ? 'transparent' : '#1c1862'
+
   return <>
-    <header className="header_section">
+    <header className="header_section" style={{ backgroundColor: background_color }}>
       <div className="container">
         <div className='row'>
           <div className='col-md-9 offset-md-3 text-right text-white'>
