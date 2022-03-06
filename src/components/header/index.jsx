@@ -39,7 +39,7 @@ export default function Header(props) {
                 <Link to="/sobre" className="nav-link">A Pontual</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="shop.html">Produtos e Serviços</a>
+                <Link to="/servicos" className="nav-link">Serviço</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="blog.html">Logistica</a>

@@ -1,0 +1,11 @@
+.certificates {
+  img {
+    filter: grayscale(1);
+    transition: all .3s;
+
+    &:hover{
+      filter: grayscale(0);
+      box-shadow:  0 0 10px #ccc;
+    }
+  }
+}

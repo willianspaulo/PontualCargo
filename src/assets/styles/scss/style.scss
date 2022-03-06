@@ -753,6 +753,12 @@ a:focus {
 .title-page {
   text-align: center;
   margin: 80px 0 50px;
+  text-transform: uppercase;
+
+  small{
+    font-size: 14px;
+    text-transform: none;
+  }
 }
 
 .text-justify > p {
