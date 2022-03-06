@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "helper.scss";
 
 // improt fonts -  font-family: 'Nunito', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
@@ -748,4 +748,19 @@ a:focus {
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   padding: 70px 50px 70px 50px;
   background-color: $white;
+}
+
+.title-page {
+  text-align: center;
+  margin: 80px 0 50px;
+}
+
+.text-justify > p {
+  text-align: justify;
+}
+
+ul.list{
+  li {
+    padding: 15px 0;
+  }
 }

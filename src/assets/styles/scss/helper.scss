@@ -1,0 +1,101 @@
+@import "variables.scss";
+
+$sizes: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 80, 100, 150, 200;
+$types: "t", "r", "b", "l";
+$attrs: "margin", "padding";
+
+@each $attr in $attrs {
+  @each $size in $sizes {
+    $x: "";
+    $y: "m";
+
+    @if ($attr == "padding") {
+      $y: "p";
+    }
+
+    @each $type in $types {
+      @if ($type == "t") {
+        $x: "top";
+      }
+
+      @if ($type == "r") {
+        $x: "right";
+      }
+
+      @if ($type == "b") {
+        $x: "bottom";
+      }
+
+      @if ($type == "l") {
+        $x: "left";
+      }
+
+      .#{$y}#{$type}-#{$size} {
+        #{$attr}-#{$x}: #{$size}px;
+      }
+    }
+  }
+}
+
+.box-white {
+  background-color: $white;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 40px;
+  border-radius: $radiusPlus;
+}
+
+.vl-wrap {
+  display: flex;
+  justify-content: center;
+
+  .vl {
+    width: 0;
+    height: 100%;
+    border-left: 1px solid;
+    border-color: #efeaea;
+  }
+}
+
+hr {
+  background: #ccc;
+}
+
+.a,
+.a > a {
+  color: $azulPontual;
+  text-decoration: none;
+
+  &:hover {
+    color: $vermelhoPontual;
+  } 
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.bg-azul {
+  background-color: $azulPontual !important;
+}
+.bg-vermelho {
+  background-color: $vermelhoPontual !important;
+}
+
+.text-azulpontual {
+  color: $azulPontual;
+}
+
+.text-vermelhopontual {
+  color: $vermelhoPontual;
+}
+
+.text-right{
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .box-white {
+    padding: 20px;
+  }
+}
